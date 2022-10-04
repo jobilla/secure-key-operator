@@ -1,0 +1,24 @@
+# permissions for end users to edit randomstrings.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: randomstring-editor-role
+rules:
+- apiGroups:
+  - encryption.jobilla.dev
+  resources:
+  - randomstrings
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - encryption.jobilla.dev
+  resources:
+  - randomstrings/status
+  verbs:
+  - get

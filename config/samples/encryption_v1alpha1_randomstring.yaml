@@ -1,0 +1,6 @@
+apiVersion: encryption.jobilla.dev/v1alpha1
+kind: RandomString
+metadata:
+  name: randomstring-sample
+spec:
+  # TODO(user): Add fields here

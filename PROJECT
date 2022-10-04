@@ -1,0 +1,16 @@
+domain: jobilla.dev
+layout:
+- go.kubebuilder.io/v4-alpha
+projectName: encryption-key-operator
+repo: github.com/jobilla/encryption-key-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: jobilla.dev
+  group: encryption
+  kind: RandomString
+  path: github.com/jobilla/encryption-key-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"
