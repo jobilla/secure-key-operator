@@ -38,8 +38,13 @@ spec:
               format:
                 description: the format of the output, "base64", "base64prefixed",
                   or "byte"
+                enum:
+                - base64
+                - base64prefixed
+                - byte
                 type: string
               length:
+                minimum: 1
                 type: integer
               writeSecretToRef:
                 properties:

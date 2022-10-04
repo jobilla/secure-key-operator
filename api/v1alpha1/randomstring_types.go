@@ -38,7 +38,7 @@ type RandomStringSpec struct {
 	Length           int        `json:"length,omitempty"`
 	WriteSecretToRef *SecretRef `json:"writeSecretToRef,omitempty"`
 
-	// +kubebuilder:validation:Enum=base64,base64prefixed,byte
+	// +kubebuilder:validation:Enum=base64;base64prefixed;byte
 	// the format of the output, "base64", "base64prefixed", or "byte"
 	Format string `json:"format,omitempty"`
 }
