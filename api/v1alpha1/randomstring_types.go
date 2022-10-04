@@ -34,8 +34,11 @@ type RandomStringSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "make" to regenerate code after modifying this file
 
+	// +kubebuilder:validation:Minimum=1
 	Length           int        `json:"length,omitempty"`
 	WriteSecretToRef *SecretRef `json:"writeSecretToRef,omitempty"`
+
+	// +kubebuilder:validation:Enum=base64,base64prefixed,byte
 	// the format of the output, "base64", "base64prefixed", or "byte"
 	Format string `json:"format,omitempty"`
 }
