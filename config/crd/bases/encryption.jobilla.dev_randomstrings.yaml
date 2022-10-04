@@ -5,9 +5,9 @@ metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.9.2
   creationTimestamp: null
-  name: randomstrings.encryption.jobilla.dev
+  name: randomstrings.crypto.jobilla.dev
 spec:
-  group: encryption.jobilla.dev
+  group: crypto.jobilla.dev
   names:
     kind: RandomString
     listKind: RandomStringList

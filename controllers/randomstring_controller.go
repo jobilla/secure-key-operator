@@ -28,7 +28,7 @@ import (
 	"sigs.k8s.io/controller-runtime/pkg/controller/controllerutil"
 	"sigs.k8s.io/controller-runtime/pkg/log"
 
-	encryptionv1alpha1 "github.com/jobilla/encryption-key-operator/api/v1alpha1"
+	encryptionv1alpha1 "github.com/jobilla/secure-key-operator/api/v1alpha1"
 )
 
 // RandomStringReconciler reconciles a RandomString object
@@ -37,9 +37,9 @@ type RandomStringReconciler struct {
 	Scheme *runtime.Scheme
 }
 
-//+kubebuilder:rbac:groups=encryption.jobilla.dev,resources=randomstrings,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=encryption.jobilla.dev,resources=randomstrings/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=encryption.jobilla.dev,resources=randomstrings/finalizers,verbs=update
+//+kubebuilder:rbac:groups=crypto.jobilla.dev,resources=randomstrings,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=crypto.jobilla.dev,resources=randomstrings/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=crypto.jobilla.dev,resources=randomstrings/finalizers,verbs=update
 //+kubebuilder:rbac:groups=core,resources=secrets,verbs=list;watch;get;create;update;patch;delete
 
 // Reconcile is part of the main kubernetes reconciliation loop which aims to

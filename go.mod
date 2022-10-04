@@ -1,4 +1,4 @@
-module github.com/jobilla/encryption-key-operator
+module github.com/jobilla/secure-key-operator
 
 go 1.18
 

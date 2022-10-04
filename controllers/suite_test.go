@@ -31,7 +31,7 @@ import (
 	logf "sigs.k8s.io/controller-runtime/pkg/log"
 	"sigs.k8s.io/controller-runtime/pkg/log/zap"
 
-	encryptionv1alpha1 "github.com/jobilla/encryption-key-operator/api/v1alpha1"
+	encryptionv1alpha1 "github.com/jobilla/secure-key-operator/api/v1alpha1"
 	//+kubebuilder:scaffold:imports
 )
 

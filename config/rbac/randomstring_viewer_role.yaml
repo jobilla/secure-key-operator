@@ -5,7 +5,7 @@ metadata:
   name: randomstring-viewer-role
 rules:
 - apiGroups:
-  - encryption.jobilla.dev
+  - crypto.jobilla.dev
   resources:
   - randomstrings
   verbs:
@@ -13,7 +13,7 @@ rules:
   - list
   - watch
 - apiGroups:
-  - encryption.jobilla.dev
+  - crypto.jobilla.dev
   resources:
   - randomstrings/status
   verbs:

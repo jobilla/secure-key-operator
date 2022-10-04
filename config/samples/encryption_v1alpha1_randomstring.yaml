@@ -1,4 +1,4 @@
-apiVersion: encryption.jobilla.dev/v1alpha1
+apiVersion: crypto.jobilla.dev/v1alpha1
 kind: RandomString
 metadata:
   name: randomstring-sample

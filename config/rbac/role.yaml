@@ -18,7 +18,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - encryption.jobilla.dev
+  - crypto.jobilla.dev
   resources:
   - randomstrings
   verbs:
@@ -30,13 +30,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - encryption.jobilla.dev
+  - crypto.jobilla.dev
   resources:
   - randomstrings/finalizers
   verbs:
   - update
 - apiGroups:
-  - encryption.jobilla.dev
+  - crypto.jobilla.dev
   resources:
   - randomstrings/status
   verbs:
